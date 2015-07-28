@@ -5,15 +5,13 @@ package com.example.testSqlite;
 */
 
 import android.app.Activity;
-import android.content.Context;
-import android.net.wifi.WifiConfiguration;
-import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
 import com.example.db.DBHelper;
 import com.example.model.Person;
-import com.example.networking.NetManager;
+import com.example.networking.Downloader;
+import com.example.networking.Uploader;
 
 public class Home extends Activity {
 
@@ -39,19 +37,11 @@ public class Home extends Activity {
             StrictMode.setThreadPolicy(policy);
         }
 
-        /*
-        String ssid = "1063F3F0E6A3C_G";
-        String pass = "3y4k7658x3sp3";
-        WifiConfiguration wifiConfiguration = new WifiConfiguration();
-        wifiConfiguration.SSID = "\"" + ssid + "\"";
-        wifiConfiguration.preSharedKey = "\"" + pass + "\"";
-        WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-        wifiManager.addNetwork(wifiConfiguration);
-        wifiManager.enableNetwork(wifiConfiguration.networkId, true);
-        wifiManager.reconnect();
-        */
+//        Uploader uploader = new Uploader(this, dbHelper);
+//        new Thread(uploader).run();
 
-        NetManager netManager = new NetManager(this, dbHelper);
-        new Thread(netManager).run();
+        Downloader downloader = new Downloader(this);
+        new Thread(downloader).run();
     }
+
 }
