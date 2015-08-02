@@ -26,14 +26,10 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.example.testSqlite" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02fbe849-4042-45b3-b441-740efb54d40c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/model/ReceiptLine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/db/DBHelper.class" afterPath="$PROJECT_DIR$/target/classes/com/example/db/DBHelper.class" />
+    <list default="true" id="02fbe849-4042-45b3-b441-740efb54d40c" name="Default" comment="receipt model added">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/testSqlite/Home.class" afterPath="$PROJECT_DIR$/target/classes/com/example/testSqlite/Home.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/testSqlite.apk" afterPath="$PROJECT_DIR$/target/classes/testSqlite.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/testSqlite.unaligned.apk" afterPath="$PROJECT_DIR$/target/classes/testSqlite.unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/db/DBHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/db/DBHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/testSqlite/Home.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/testSqlite/Home.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -62,8 +58,8 @@
       <file leaf-file-name="Home.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/testSqlite/Home.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8037037">
-              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.23703703">
+              <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -726,12 +722,19 @@
       <workItem from="1437897786601" duration="22063000" />
       <workItem from="1438086479595" duration="10327000" />
       <workItem from="1438492287299" duration="155000" />
-      <workItem from="1438514968558" duration="8940000" />
+      <workItem from="1438514968558" duration="12304000" />
     </task>
+    <task id="LOCAL-00001" summary="receipt model added">
+      <created>1438524257594</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1438524257594</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48458000" />
+    <option name="totallyTimeSpent" value="51822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="754" extended-state="0" />
@@ -777,6 +780,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="receipt model added" />
+    <option name="LAST_COMMIT_MESSAGE" value="receipt model added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1068,8 +1075,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/testSqlite/Home.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8037037">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.23703703">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

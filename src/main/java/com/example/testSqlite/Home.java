@@ -24,7 +24,7 @@ public class Home extends Activity {
         this.deleteDatabase("person.db");
         DBHelper dbHelper = new DBHelper(this, null, null, 1);
         dbHelper.addPerson(new Person("ZNATZ", 30));
-        dbHelper.addReceiptLine(new ReceiptLine("1", "もなか", "3", "20150802", "3", "2"));
+        dbHelper.addReceiptLine(new ReceiptLine("1", "伊倉ヶ浜", "7", "20150803", "4", "2"));
 
 /*
     To take a look at the generated file
