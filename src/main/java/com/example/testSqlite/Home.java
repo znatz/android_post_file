@@ -10,6 +10,7 @@ import android.os.StrictMode;
 import android.util.Log;
 import com.example.db.DBHelper;
 import com.example.model.Person;
+import com.example.model.ReceiptLine;
 import com.example.networking.Downloader;
 import com.example.networking.Uploader;
 
@@ -20,8 +21,10 @@ public class Home extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        this.deleteDatabase("person.db");
         DBHelper dbHelper = new DBHelper(this, null, null, 1);
         dbHelper.addPerson(new Person("ZNATZ", 30));
+        dbHelper.addReceiptLine(new ReceiptLine("1", "もなか", "3", "20150802", "3", "2"));
 
 /*
     To take a look at the generated file
@@ -37,11 +40,12 @@ public class Home extends Activity {
             StrictMode.setThreadPolicy(policy);
         }
 
-//        Uploader uploader = new Uploader(this, dbHelper);
-//        new Thread(uploader).run();
+        Uploader uploader = new Uploader(this, dbHelper);
+        new Thread(uploader).run();
 
         Downloader downloader = new Downloader(this);
         new Thread(downloader).run();
+
     }
 
 }
